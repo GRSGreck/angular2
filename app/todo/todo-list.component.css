@@ -12,3 +12,7 @@ todo-item:last-of-type {
 todo-item:hover {
     background: #E8E8E8;
 }
+
+.done {
+    text-decoration: line-through;
+}

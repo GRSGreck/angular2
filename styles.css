@@ -12,3 +12,9 @@ h2, h3 {
 body {
     margin: 2em;
 }
+
+todo-item:after {
+    content: '';
+    display: block;
+    clear: both;
+}

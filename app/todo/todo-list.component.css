@@ -1,0 +1,14 @@
+todo-item {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+todo-item:last-of-type {
+    border: none;
+}
+
+todo-item:hover {
+    background: #E8E8E8;
+}

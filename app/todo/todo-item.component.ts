@@ -13,4 +13,8 @@ export class TodoItemComponent {
     toggleDone() {
         this.todo.done = !this.todo.done;
     }
+
+    removeTodo() {
+        console.log('Remove todo', this.todo);
+    }
 }

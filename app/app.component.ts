@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Todo } from './todo/todo';
 
 @Component({
     selector: 'todo-app',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
     title: string;
-    todos: string[];
+    todos: Todo[];
 
     constructor() {
         this.title = 'Angular 2Do!!!';
@@ -16,6 +17,6 @@ export class AppComponent {
     }
 
     addTodo(title: string) {
-        this.todos.push(title);
+        this.todos.push(new Todo(title));
     }
 }

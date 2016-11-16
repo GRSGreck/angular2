@@ -1,18 +1,7 @@
-todo-item {
-    display: block;
-    padding: 10px;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
+:host {
+    max-width: 917px;
 }
 
-todo-item:last-of-type {
-    border: none;
-}
-
-todo-item:hover {
-    background: #E8E8E8;
-}
-
-.done {
-    text-decoration: line-through;
+:host.center-block {
+    margin-top: 30px;
 }

@@ -1,3 +1,18 @@
+:host {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+:host:last-of-type {
+    border: none;
+}
+
+:host:hover {
+    background: #E8E8E8;
+}
+
 button.delete {
     float: right;
 }
@@ -5,4 +20,8 @@ button.delete {
 .checkbox {
     float: left;
     margin: 0;
+}
+
+.done {
+    text-decoration: line-through;
 }

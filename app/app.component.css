@@ -1,11 +1,3 @@
 .btn.btn-primary {
     width: 100%;
 }
-
-todo-list {
-    max-width: 917px;
-}
-
-todo-list.center-block {
-    margin-top: 30px;
-}

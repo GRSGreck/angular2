@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TodoService } from "./shared/todo.service";
 
 // import { Todo } from './shared/todo.model';
 
@@ -10,13 +11,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
     title: string;
-    // todos: Todo[];
 
-    constructor() {
+    constructor(private todoService: TodoService) {
         this.title = 'Angular 2Do!!!';
     }
-
-    // onAddedTodo(todo: Todo) {
-    //     this.todos.push(todo);
-    // }
 }

@@ -11,11 +11,11 @@ export class TodoItemComponent {
     @Input() todo: Todo;
     @Output() removedTodo = new EventEmitter();
 
-    toggleDone() {
+    toggleDone():void {
         this.todo.done = !this.todo.done;
     }
 
-    removeTodo() {
+    removeTodo():void {
         this.removedTodo.emit(this.todo);
     }
 }

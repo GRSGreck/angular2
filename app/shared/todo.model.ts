@@ -1,4 +1,9 @@
-export class Todo {
+export interface InterfaceTodo {
+    title: string;
+    done: boolean;
+}
+
+export class Todo implements InterfaceTodo {
     title: string;
     done: boolean;
 

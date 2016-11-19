@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Todo } from './shared/todo.model';
+
+// import { Todo } from './shared/todo.model';
 
 @Component({
     selector: 'todo-app',
@@ -9,14 +10,13 @@ import { Todo } from './shared/todo.model';
 
 export class AppComponent {
     title: string;
-    todos: Todo[];
+    // todos: Todo[];
 
     constructor() {
         this.title = 'Angular 2Do!!!';
-        this.todos = [];
     }
 
-    onAddedTodo(todo: Todo) {
-        this.todos.push(todo);
-    }
+    // onAddedTodo(todo: Todo) {
+    //     this.todos.push(todo);
+    // }
 }

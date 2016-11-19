@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 import { Todo } from '../../shared/todo.model';
+import { TodoService } from "../../shared/todo.service";
 
 @Component({
     selector: 'todo-list',
@@ -8,8 +9,14 @@ import { Todo } from '../../shared/todo.model';
     styleUrls: ['./app/components/todo-list/todo-list.component.css']
 })
 
-export class TodoListComponent {
-    @Input() todos: Todo[];
+export class TodoListComponent implements OnInit {
+    todos: Todo[];
+
+    constructor(private todoService: TodoService) {}
+
+    ngOnInit() {
+        this.todos = this.todoService.getTodos();
+    }
 
     get sortedTodos() {
         return this.todos

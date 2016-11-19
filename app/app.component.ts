@@ -16,7 +16,7 @@ export class AppComponent {
         this.todos = [];
     }
 
-    addTodo(title: string) {
-        this.todos.push(new Todo(title));
+    onAddedTodo(todo: Todo) {
+        this.todos.push(todo);
     }
 }

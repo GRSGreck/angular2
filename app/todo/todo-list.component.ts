@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 
+import { Todo } from './todo';
+
 @Component({
     selector: 'todo-list',
     templateUrl: './app/todo/todo-list.component.html',
@@ -7,5 +9,10 @@ import { Component, Input } from '@angular/core';
 })
 
 export class TodoListComponent {
-    @Input() todos: string[];
+    @Input() todos: Todo[];
+
+    public onRemovedTodo(todo: Todo):void {
+        let index = this.todos.indexOf(todo);
+        if (index !== -1) this.todos.splice(index, 1);
+    }
 }

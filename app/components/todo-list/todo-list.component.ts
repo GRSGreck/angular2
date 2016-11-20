@@ -35,7 +35,7 @@ export class TodoListComponent implements OnInit {
             });
     }
 
-    public onRemovedTodo(todo: InterfaceTodo):void {
+    onRemovedTodo(todo: InterfaceTodo):void {
         this.todoService.removeTodo(todo);
     }
 }

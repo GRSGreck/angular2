@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { TodoService } from "./shared/todo.service";
-
-// import { Todo } from './shared/todo.model';
 
 @Component({
     selector: 'todo-app',
@@ -12,7 +9,7 @@ import { TodoService } from "./shared/todo.service";
 export class AppComponent {
     title: string;
 
-    constructor(private todoService: TodoService) {
+    constructor() {
         this.title = 'Angular 2Do!!!';
     }
 }
